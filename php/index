@@ -1,0 +1,15 @@
+<?php
+$servername = "localhost"; // change to your server name
+$username = "akhil"; // change to your MySQL username
+$password = "*ESSECparis1"; // change to your MySQL password
+$dbname = "CAKE_CUSTOMERS"; // change to your database name
+
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+
+// Check connection
+if (!$conn) {
+  die("Connection failed: " . mysqli_connect_error());
+}
+echo "Connected successfully";
+?>
